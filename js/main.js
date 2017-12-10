@@ -1,5 +1,5 @@
 (function($){
-  $(document).ready(function(){
+ 
 
 
 function calculateIndicators () {
@@ -131,7 +131,7 @@ $(document).ready(function () {
       }
     });
 
-	$(function () {
+	/*$(function () {
         var backTopElem = document.createElement('div');
         backTopElem.className = "back-top";
         document.body.appendChild(backTopElem);
@@ -151,8 +151,8 @@ $(document).ready(function () {
 			}, 800);
 			return false;
 		});
-	});
+	});*/
 });
 
-  });
+  
 })(jQuery);
