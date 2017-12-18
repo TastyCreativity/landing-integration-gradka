@@ -43,7 +43,6 @@
   justify-content: flex-start;
   align-items: center;
 
-
   img {
     height: 90%;
     width: auto;
@@ -111,23 +110,27 @@
   outline-color: rgba(#ffff00, 0.7);
   border: none;
   transition: 0.3s;
+  line-height: 2;
   @include desktop {
     font-size: 1.65rem;
   }
-  @media (max-width: 440px)
-  {
+  @media (max-width: 440px) {
     font-size: 1.4rem;
     line-height: 1.5rem;
   }
+
   &:focus {
     outline: 0;
   }
+
   &:active {
     outline: 0;
   }
+
   &:after {
     width: 0;
     height: 0;
+    display: block;
     margin-right: 20px;
     align-self: center;
     vertical-align: middle;
@@ -137,10 +140,18 @@
     border-left: 1rem solid transparent;
     transition: 0.3s;
   }
-  &:hover {
+  &:active {
     &:after {
       border-top: 1.7rem solid rgba(#ffff00, 0.7);
       transition: 0.3s;
+    }
+  }
+  @include desktop {
+    &:hover {
+      &:after {
+        border-top: 1.7rem solid rgba(#ffff00, 0.7);
+        transition: 0.3s;
+      }
     }
   }
 }

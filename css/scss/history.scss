@@ -159,7 +159,7 @@
   justify-content: flex-end;
 
   li {
-      text-indent: unset;
+      text-indent: 0px;
       cursor: pointer;
       font-family: "Ubuntu", sans-serif;
       font-weight: 400;
@@ -248,6 +248,7 @@
     margin-left: 5px;
   }
 }
+
 .history__navigation_next.disabled {
   pointer-events: none;
   cursor: default;

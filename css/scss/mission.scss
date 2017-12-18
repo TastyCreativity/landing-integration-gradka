@@ -41,6 +41,7 @@
 }
 .carousel {
   margin-top: 20px;
+  width: 100%;
 }
 .carousel-control-prev-icon {
   background: url($img-path + "slider_arrows.png") left center no-repeat;
@@ -50,12 +51,21 @@
   background-size: 120px 40px;
 }
 
+
 .carousel-control-prev {
-  &:hover {
+  &:active {
     .carousel-control-prev-icon {
         background-position: 0 0;
     }
   }
+  @include desktop {
+    &:hover {
+      .carousel-control-prev-icon {
+          background-position: 0 0;
+      }
+    }
+  }
+
   opacity: 1;
 }
 
@@ -68,9 +78,16 @@
 }
 
 .carousel-control-next {
-  &:hover {
+  &:active {
     .carousel-control-next-icon {
         background-position: -90px 0;
+    }
+  }
+  @include desktop {
+    &:hover {
+      .carousel-control-next-icon {
+          background-position: -90px 0;
+      }
     }
   }
   opacity: 1;

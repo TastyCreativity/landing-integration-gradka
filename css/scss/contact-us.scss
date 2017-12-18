@@ -1,6 +1,6 @@
 .contact-us {
   background-color: #ffffff;
-  padding: 8vh 0 8vh 0;
+  padding: 8vh 0 8vh 0;  
 
   @include desktop {
     padding: 50px 0 60px 0;
@@ -38,6 +38,7 @@
 }
 .contact-us__text > .contact-us__text_header {
   font-weight: bold;
+  word-break: normal;
   display: block;
 }
 
@@ -51,11 +52,18 @@
     margin-bottom: 0;
   }
 }
+
 .contact-us__map {
     margin-bottom: 0;
     height: 300px;
+    
     @include desktop {
       height: calc(100% - 5px);
       margin-top: 5px;
     }
+    .frame__map {
+      border: none;
+      height: 100%;
+      width: 100%;
+    }      
 }
