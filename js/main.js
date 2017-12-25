@@ -15,8 +15,14 @@ function calculateIndicators () {
     return active_index;
 }
 
+function replaceLinksOnMobile () {
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+    $(".certification .button").attr("href", "mailto:falanster.by@gmail.com");
+  }
+}
 
 document.addEventListener("DOMContentLoaded", calculateIndicators);
+document.addEventListener("DOMContentLoaded", replaceLinksOnMobile);
 
 $(document).ready(function () {
 
