@@ -54,14 +54,14 @@
     Змяняем страку
     <a class="nav-link" href="index-en.html">EN</a>
     на
-    <a class="nav-link" href="https://ftest.falanster.by/en/creativecommons">EN</a></li>
+    <a class="nav-link" href="https://falanster.by/en/creativecommons">EN</a></li>
 24. Націсківаем кнопку "Адправіць".
 25. Далей адчыняем у браузеры http://falanster.by/en/node/1136/edit
 26. У рэдактар капіруем тое, што знаходзіцца, паміж тэгамі <body></body> (іх не уключаем) у файле index-en.html.
     Змяняем страку
     <li class="nav-item language-switcher item"><a class="nav-link language-switcher item_active" href="index.html">BY</a></li>
     на
-    <li class="nav-item language-switcher item"><a class="nav-link" href="https://ftest.falanster.by/be/creativecommons">BY</a></li>
+    <li class="nav-item language-switcher item"><a class="nav-link" href="https://falanster.by/be/creativecommons">BY</a></li>
 
     Змяняем страку
     <li class="nav-item language-switcher item"><a class="nav-link" href="index-en.html">EN</a></li>
